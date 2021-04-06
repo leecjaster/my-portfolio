@@ -45,9 +45,15 @@ export default function Project() {
                 <strong className="font-bold">Company</strong>:{" "}
                 {project.place}
               </span>
-              <span></span>
-              <p></p>
-              <span></span>
+              <span>
+                <strong className="font-bold">Type</strong>:{" "}
+                {project.projectType}
+              </span>
+              <p className="my-6 text-lg text-gray-700 leading-relaxed">{project.description}</p>
+              <a href={project.link} rel="noopener noreferrer" target="_blank" className="text-red-500 text-xl font-bold hover:underline hover:text-red-400">
+                View the Project{" "}
+                <span role="img" aria-label="right pointer">👉</span>
+              </a>
             </div>
           </article>
           ))}
